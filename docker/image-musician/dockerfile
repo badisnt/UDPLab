@@ -1,0 +1,4 @@
+FROM openjdk:21
+WORKDIR /app
+ADD target/Musician-1.0-SNAPSHOT-jar-with-dependencies.jar /app/app.jar
+ENTRYPOINT ["java", "-jar", "app.jar"]
